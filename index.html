@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/cv.css">
+    <link rel="stylesheet" href="assets/css/loading.css">
+    <style type="text/css">
+        .site-welcome {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #888888;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .site-welcome.active {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+<div id="siteWelcome" class="site-welcome active">
+    <div class="loading"></div>
+</div>
+<div class="page">
+    <header class="header">
+        <div class="head-bg"></div>
+        <div id="topNavBar" class="head-topbar">
+            <div class="head-topbar-inner">
+                <div class="col-w">
+                    <a class="logo" href="#"><span id="rs">RS</span><span id="card">card</span></a>
+                </div>
+                <nav class="navgation">
+                    <ul class="menu">
+                        <li><a href="#about">关于</a></li>
+                        <li><a href="#skills">技能</a></li>
+                        <li>
+                            <a href="#portfolio">作品</a>
+                            <ul class="submenu">
+                                <li>作品1</li>
+                                <li>作品2</li>
+                                <li>作品3</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#blog">博客</a>
+                            <ul class="submenu">
+                                <li>博客1</li>
+                                <li>博客2</li>
+                                <li>博客3</li>
+                            </ul>
+                        </li>
+                        <li><a href="#calendar">日历</a></li>
+                        <li><a href="#contactus">联系方式</a></li>
+                        <li><a href="#workExperience">其他</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <!--Profile Begin-->
+        <div data-x id="about" class="profile-container">
+            <section id="profile" class="section-profile">
+                <div class="profile-inner">
+                    <div class="profile-info">
+                        <div class="picture">
+                            <img src="./assets/img/avatar.jpg" alt="个人头像" title="个人头像" width="299" height="347"
+                                 class="photo"/>
+                            <img src="./assets/img/avatar.jpg" alt="个人头像悬停" title="个人头像悬停" width="299" height="347"
+                                 class="photo-hover">
+                        </div>
+                        <div class="profile">
+                            <div class="profile-summary">
+                        <span class="profile-preword">
+                            HELLO
+                            <span class="triangle"></span>
+                        </span>
+                                <h1>孟艳利</h1>
+                                <p>前端开发工程师</p>
+                            </div>
+                            <dl class="profile-list clearfix">
+                                <dt>年龄</dt>
+                                <dd>27</dd>
+                                <dt>所在城市</dt>
+                                <dd>南京</dd>
+                                <dt>邮箱</dt>
+                                <dd>mengyx92@foxmail.com</dd>
+                                <dt>手机</dt>
+                                <dd>18895787787</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="profile-social">
+                        <a href="#" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#icon-github1"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#icon-jianshu"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#icon-weibo"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg class="icon">
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--Profile End-->
+        <div class="download-cv">
+            <a class="button" href="#">下载 PDF 简历</a>
+            <p>
+                孟艳利，前端工程师，现在在江苏永谐文化传媒有限公司担任前端开发。<br>
+                技能：前端开发，Vue.js开发，Boostrap开发
+            </p>
+        </div>
+        <!--Professional Skills Begin-->
+        <section data-x id="skills" class="section-skills">
+            <h2>专业技能</h2>
+            <div class="skills-items">
+                <ul class="skills-list clearfix">
+                    <li>
+                        <div class="progress-bar">
+                            <div class="bar-data">HTML5 &amp; CSS3</div>
+                            <div class="bar-line">
+                                <div class="bar-line-inner"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="progress-bar">
+                            <div class="bar-data">JavaScript</div>
+                            <div class="bar-line">
+                                <div class="bar-line-inner"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="progress-bar">
+                            <div class="bar-data">jQuery</div>
+                            <div class="bar-line">
+                                <div class="bar-line-inner"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="progress-bar">
+                            <div class="bar-data">HTTP</div>
+                            <div class="bar-line">
+                                <div class="bar-line-inner"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="progress-bar">
+                            <div class="bar-data">Bootstrap</div>
+                            <div class="bar-line">
+                                <div class="bar-line-inner"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="progress-bar">
+                            <div class="bar-data">Vue</div>
+                            <div class="bar-line">
+                                <div class="bar-line-inner"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Professional Skills End-->
+        <!--Portfolio Begin-->
+        <section data-x id="portfolio" class="section-portfolio">
+            <h2>作品集</h2>
+            <!--<nav>-->
+            <!--<ol class="portfolio-menu clearfix">-->
+            <!--<li>所有</li>-->
+            <!--<li>原生JS&amp;CSS</li>-->
+            <!--<li>框架</li>-->
+            <!--</ol>-->
+            <!--<div class="portfolio-bar">-->
+            <!--<div class="bar-inner"></div>-->
+            <!--</div>-->
+            <!--</nav>-->
+
+            <div id="mySlides">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <img class="swiper-slide" src="assets/img/works/nav-page.jpg">
+                        <img class="swiper-slide" src="assets/img/works/canvas.jpg">
+                        <img class="swiper-slide" src="assets/img/works/apple-style-slides.jpg">
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <!--<div class="portfolio-items">-->
+            <!--<div class="pf-item big-item">-->
+            <!--<img src="assets/img/zpj1-1.jpg" alt="">-->
+            <!--</div>-->
+            <!--<div class="pf-item small-item">-->
+            <!--<img src="assets/img/zpj1-2.jpg" alt="">-->
+            <!--</div>-->
+            <!--<div class="pf-item small-item2">-->
+            <!--<img src="assets/img/zpj1-3.jpg" alt="">-->
+            <!--</div>-->
+            <!--</div>-->
+
+        </section>
+        <!-- 留言区 -->
+    </main>
+</div>
+<section class="message">
+    <h2>留言</h2>
+    <ol id="messageList">
+    </ol>
+    <form id="postMessageForm" style="width: 700px; margin: 50px auto;">
+        <label for="">姓名</label>
+        <input type="text" name="name">
+        <label for="">内容</label>
+        <input type="text" name="content">
+        <input type="submit" value="提交" style="margin-left: 16px; padding: 1px 8px; border: 1px solid #333; border-radius: 4px;">
+    </form>
+</section>
+</body>
+<script src="//at.alicdn.com/t/font_970274_4av7xeyamry.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.5.0/av-min.js"></script>
+<!-- 模块化 -->
+<script src="./js/init-swiper.js"></script>
+<script src="./js/auto-slide-up.js"></script>
+<script src="./js/sticky-topbar.js"></script>
+<script src="./js/smoothly-navigation.js"></script>
+<script src="./js/message.js"></script>
+<script>
+    window.setTimeout(function () {
+        siteWelcome.classList.remove('active'), 1000
+    })
+</script>
+<!--<script>-->
+<!--var mySwiper = new Swiper ('.swiper-container', {-->
+<!--loop: true, // 循环模式选项-->
+<!--// 如果需要分页器-->
+<!--pagination: {-->
+<!--el: '.swiper-pagination',-->
+<!--},-->
+<!--// 如果需要前进后退按钮-->
+<!--navigation: {-->
+<!--nextEl: '.swiper-button-next',-->
+<!--prevEl: '.swiper-button-prev',-->
+<!--}-->
+<!--})-->
+<!--</script>-->
+<!--<script>-->
+<!--window.setTimeout(function () {-->
+<!--siteWelcome.classList.remove('active')-->
+<!--}, 1000)-->
+
+<!--let specialTags = document.querySelectorAll('[data-x]')-->
+<!--for (let i = 0; i < specialTags.length; i++) {-->
+<!--specialTags[i].classList.add('offset')-->
+<!--}-->
+
+<!--setTimeout(function () {-->
+<!--findClosest()-->
+<!--}, 1000)-->
+
+<!--window.onscroll = function (xxx) {-->
+<!--console.log(window.scrollY)-->
+<!--if (window.scrollY > 0) {-->
+<!--topNavBar.classList.add('sticky')-->
+<!--} else {-->
+<!--topNavBar.classList.remove('sticky')-->
+<!--}-->
+
+<!--findClosest()-->
+<!--}-->
+
+<!--function findClosest() {-->
+<!--let specialTags = document.querySelectorAll('[data-x]')-->
+<!--let minIndex = 0-->
+<!--console.log(specialTags.length)-->
+<!--for (let i = 1; i < specialTags.length; i++) {-->
+<!--if (Math.abs(specialTags[i].offsetTop - window.scrollY) < Math.abs(specialTags[minIndex].offsetTop - window.scrollY)) {-->
+<!--minIndex = i-->
+<!--}-->
+<!--}-->
+
+<!--for (let i = 0; i < specialTags.length; i++) {-->
+<!--specialTags[i].classList.remove('active')-->
+<!--}-->
+<!--specialTags[minIndex].classList.add('active')-->
+<!--let id = specialTags[minIndex].id-->
+<!--let a = document.querySelector('a[href="#' + id + '"]')-->
+<!--let li = a.parentNode-->
+<!--let brothersAndMe = li.parentNode.children-->
+<!--for (let i = 0; i < brothersAndMe.length; i++) {-->
+<!--brothersAndMe[i].classList.remove('highlight')-->
+<!--}-->
+<!--li.classList.add('highlight')-->
+<!--}-->
+
+<!--let liTags = document.querySelectorAll('nav.navgation > ul > li')-->
+<!--console.log(liTags)-->
+<!--for (let i = 0; i < liTags.length; i++) {-->
+<!--liTags[i].onmouseenter = function (x) {-->
+<!--//            let a = x.currentTarget-->
+<!--//            let brother = a.nextSibling-->
+<!--//            while (brother.nodeType === 3) { //文本节点-->
+<!--//                brother = brother.nextSibling-->
+<!--//            }-->
+<!--//            brother.classList.add('active')-->
+<!--x.currentTarget.classList.add('active')-->
+<!--}-->
+
+<!--liTags[i].onmouseleave = function (x) {-->
+<!--//            let a = x.currentTarget-->
+<!--//            let brother = a.nextSibling-->
+<!--//            while (brother.nodeType === 3) { //文本节点-->
+<!--//                brother = brother.nextSibling-->
+<!--//            }-->
+<!--//            brother.classList.remove('active')-->
+<!--x.currentTarget.classList.remove('active')-->
+<!--}-->
+<!--}-->
+
+
+<!--let aTags = document.querySelectorAll('nav.navgation > ul > li > a')-->
+<!--// Setup the animation loop.-->
+<!--function animate(time) {-->
+<!--requestAnimationFrame(animate);-->
+<!--TWEEN.update(time);-->
+<!--}-->
+<!--requestAnimationFrame(animate);-->
+
+<!--for (let i = 0; i < aTags.length; i++) {-->
+<!--aTags[i].onclick = function (x) {-->
+<!--x.preventDefault()-->
+<!--let a = x.currentTarget-->
+<!--let href = a.getAttribute('href')-->
+<!--let element = document.querySelector(href)-->
+<!--let top = element.offsetTop-->
+<!--//            window.scrollTo(0, top - 80)-->
+
+<!--let currentTop = window.scrollY-->
+<!--let targetTop = top - 80-->
+<!--let s = targetTop - currentTop-->
+<!--const coords = {y: currentTop}; // Start at (0, 0)-->
+<!--var t = Math.abs((s / 100) * 300)-->
+<!--if (t > 500) {-->
+<!--t = 500-->
+<!--}-->
+
+
+<!--const tween = new TWEEN.Tween(coords) // Create a new tween that modifies 'coords'.-->
+<!--.to({y: targetTop}, t) // Move to (300, 200) in 1 second.-->
+<!--.easing(TWEEN.Easing.Quadratic.InOut) // Use an easing function to make the animation smooth.-->
+<!--.onUpdate(() => { // Called after tween.js updates 'coords'.-->
+<!--// Move 'box' to the position described by 'coords' with a CSS translation.-->
+<!--//                    box.style.setProperty('transform', `translate(${coords.x}px, ${coords.y}px)`);-->
+<!--window.scrollTo(0, coords.y)-->
+<!--})-->
+<!--.start(); // Start the tween immediately.-->
+<!--}-->
+<!--}-->
+<!--</script>-->
+</html>
