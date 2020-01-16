@@ -63,6 +63,7 @@
             let name = myForm.querySelector('input[name=name]').value
             if (content === '' || name === '') {
                 alert('留言信息不能为空！')
+                return
             }
             this.model.save(name, content).then(function (object) {
                 let li = document.createElement('li')
