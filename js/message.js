@@ -65,7 +65,7 @@
             alert(content)
             alert(content.trim().length)
             if (content.trim().length <=0 || name.trim().length <=0) {
-                alert('留言信息不能为空！')
+                alert('留言姓名或内容不能为空！')
                 return
             }
             this.model.save(name, content).then(function (object) {
