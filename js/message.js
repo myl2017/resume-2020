@@ -61,6 +61,9 @@
             let myForm = this.form
             let content = myForm.querySelector('input[name=content]').value
             let name = myForm.querySelector('input[name=name]').value
+            alert(content.length)
+            alert(content)
+            alert(content.trim().length)
             if (content.trim().length <=0 || name.trim().length <=0) {
                 alert('留言信息不能为空！')
                 return
